@@ -1,6 +1,7 @@
 **Instructions:** The entirety of this assignment must be submitted as an R Markdown file (.Rmd) on your GitHub repository.  Use the .Rmd note handout files and the R Markdown cheat sheet as guidelines.  You are encouraged to save this HW1.Rmd file and fill in the questions with your answers, then submit.  **I should be able to knit your .Rmd file and compile your code myself, so make sure you do some bug checks before submitting!** (I.e., knit the document yourself a couple times and search for errors.)
 Consider Example 2 in the notes.  2 dice are rolled, one red and one white.  Let $Y$ be the random variable that denotes the maximum value of the two rolls.  We will use simulation to find the mean and variance of $Y$, and then verify that our simulated results match what we would expect theoretically.
-
+You need the header information; this won't compile as-is. -1
+Good work overall; 17/18
 **Theoretical section**
 
 .1. (3pts) Define the pmf, find $\mu = E(Y)$, $\sigma^2 = Var(Y)$, and $\sigma = SD(Y)$.  Show all your work.
@@ -101,6 +102,7 @@ one.Z()
 set.seed(3000)
 many.Z <- replicate(1000, one.Z())
 ```
+Don't need to write a new function; can just define Z = 2*Y+1 and look at mean, variance from there.
 .10. (1pt)  What is the mean of $Z$?
 ```{r}
 #Mean1
